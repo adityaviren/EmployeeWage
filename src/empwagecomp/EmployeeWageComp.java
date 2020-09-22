@@ -1,13 +1,26 @@
 package empwagecomp;
 
+import java.util.Scanner;
+
 public class EmployeeWageComp {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
 		System.out.println("Welcome to Employee Wage Computation Program");
 		isPresent();
-		calculateDailyWage();
-		calculatePartTime();
+		System.out.println("Enter 1 if you are Regular Employee\nEnter 2 if you are Part Time Employee");
+		int employee_case=sc.nextInt();
+		switch(employee_case){
+		case 1:
+			calculateDailyWage();
+			break;
+		case 2:
+			calculatePartTime();
+			break;
+		default:
+			break;
+		}
 	}
 	private static void isPresent() {
 		double is_present=Math.random();

@@ -39,5 +39,9 @@ public class EmployeeWageComp {
 		long part_time_wage=part_time_hours*part_time_wage_per_hour;
 		System.out.println("Part Time wage of employee");
 	}
-
+	private static void calculateMonthly(long daily_wage) {
+		int no_of_days=20;
+		long monthly_salary=daily_wage*no_of_days;
+		System.out.println("Monthly Salary = "+monthly_salary);
+	}
 }

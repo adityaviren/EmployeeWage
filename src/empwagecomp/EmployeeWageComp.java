@@ -6,9 +6,6 @@ public class EmployeeWageComp {
 
 	public static void main(String[] args) {
 		double is_present=Math.random();
-		if(is_present<.5)
-			System.out.println("Employee is absent");
-		else
-			System.out.println("Employee is present");
+		String message = (is_present < 0.5) ? "Employee is present" : "Employee is absent" ;
 	}
 }

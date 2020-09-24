@@ -7,7 +7,7 @@ public class EmployeeWageComp {
 
 	public static void main(String[] args) {
 		int total_emp_hours = 0, total_emp_days = 1, monthly_salary = 0;
-		while (total_emp_hours <= 100 && total_emp_days <= 20) {
+		while (total_emp_hours < 100 && total_emp_days <= 20) {
 			int is_present = (int) (Math.random() * 30 % 3);
 			int emp_hour = 0, emp_daily_wage;
 			switch (is_present) {
